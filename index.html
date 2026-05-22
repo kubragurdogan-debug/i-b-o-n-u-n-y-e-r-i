@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İbo'nun Yeri Menü</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- DİL SEÇİM EKRANI -->
+  <section id="languageScreen" class="language-screen">
+    <div class="language-card">
+      <div class="mini-label">1989’dan beri</div>
+      <h1>İBO'NUN YERİ</h1>
+      <p>Lütfen menü dilini seçiniz.</p>
+      <div class="language-actions">
+        <button class="lang-choice" data-lang="tr">TR</button>
+        <button class="lang-choice" data-lang="en">EN</button>
+        <button class="lang-choice" data-lang="ar">AR</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANA SAYFA -->
+  <main id="app" class="app is-hidden">
+    <!-- HERO -->
+    <header class="hero" id="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="topbar">
+        <div class="brand-small">İBO'NUN YERİ</div>
+        <div class="language-switch">
+          <button class="lang-btn active" data-lang="tr">TR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="since">1989’dan beri</span>
+          <h2 id="heroTitle">Aynı Sofrada, Aynı Lezzet.</h2>
+          <p id="heroText">Geleneksel meyhane ruhunu, sıcak sohbet ve özenle hazırlanan lezzetlerle yaşatıyoruz.</p>
+          <a href="#menuArea" class="hero-btn" id="heroButton">Menüye Göz At</a>
+        </div>
+
+        <div class="stamp" aria-label="İbo'nun Yeri mührü">
+          <img src="assets/ui/kurucu.jpg" alt="İbo'nun Yeri" />
+          <div class="stamp-board">
+            <strong>İBO'NUN YERİ</strong>
+            <span>1989’DAN BERİ</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ÜST KATEGORİ KISA YOL BUTONLARI -->
+    <nav id="categoryPills" class="category-pills"></nav>
+
+    <!-- MENÜ ALANI -->
+    <section id="menuArea" class="menu-wrap">
+      <div class="section-heading">
+        <span>⚓</span>
+        <h2 id="menuTitle">MENÜ</h2>
+        <p id="menuSub">Başlıklara dokunarak içerikleri açabilirsiniz.</p>
+      </div>
+
+      <div id="accordionRoot" class="accordion-root"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
