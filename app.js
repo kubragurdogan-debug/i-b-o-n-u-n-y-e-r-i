@@ -5,7 +5,7 @@
    price:"600 ₺" yazan yerleri değiştir.
 
    Görsel değiştirmek için:
-   image:"assets/mezeler/...jpg" satırını değiştir.
+   image:"...jpg" satırını değiştir.
 
    Fiyatlar hiçbir dilde çevrilmez. Her zaman TL kalır.
 ========================================================= */
@@ -42,23 +42,23 @@ const TEXT = {
 ========================================================= */
 const IMG = {
   meze: {
-    sosluPatlican: "assets/mezeler/soslu-patlican.jpg",
-    havucTarator: "assets/mezeler/havuc-tarator.jpg",
-    zeytinyagliFasulye: "assets/mezeler/zeytinyagli-fasulye.jpg",
-    zeytinyagliBorulce: "assets/mezeler/zeytinyagli-borulce.jpg",
-    patlicanSalatasi: "assets/mezeler/patlican-salatasi.jpg",
-    kabakBorani: "assets/mezeler/kabak-borani.jpg",
-    bosnakHaydari: "assets/mezeler/bosnak-haydari.jpg",
-    humus: "assets/mezeler/humus.jpg",
-    kerevizSalatasi: "assets/mezeler/kereviz-salatasi.jpg",
-    pancarSalatasi: "assets/mezeler/pancar-salatasi.jpg",
-    paziKavurma: "assets/mezeler/pazi-kavurma.jpg",
-    zeytinyagliBarbunya: "assets/mezeler/zeytinyagli-barbunya.jpg",
-    saksuka: "assets/mezeler/saksuka.jpg",
-    tazeFasulyeKavurma: "assets/mezeler/taze-fasulye-kavurma.jpg",
-    karisikKizartma: "assets/mezeler/karisik-kizartma.jpg"
+    sosluPatlican: "soslu-patlican.jpg",
+    havucTarator: "havuc-tarator.jpg",
+    zeytinyagliFasulye: "zeytinyagli-fasulye.jpg",
+    zeytinyagliBorulce: "zeytinyagli-borulce.jpg",
+    patlicanSalatasi: "patlican-salatasi.jpg",
+    kabakBorani: "kabak-borani.jpg",
+    bosnakHaydari: "bosnak-haydari.jpg",
+    humus: "humus.jpg",
+    kerevizSalatasi: "kereviz-salatasi.jpg",
+    pancarSalatasi: "pancar-salatasi.jpg",
+    paziKavurma: "pazi-kavurma.jpg",
+    zeytinyagliBarbunya: "zeytinyagli-barbunya.jpg",
+    saksuka: "saksuka.jpg",
+    tazeFasulyeKavurma: "taze-fasulye-kavurma.jpg",
+    karisikKizartma: "karisik-kizartma.jpg"
   },
-  sutlac: "assets/ui/sutlac.png"
+  sutlac: "sutlac.png"
 };
 
 /* =========================================================

@@ -40,7 +40,7 @@ button{font-family:inherit;cursor:pointer}
   padding:20px;
   background:
     linear-gradient(90deg,rgba(4,12,20,.88),rgba(4,12,20,.42)),
-    url('assets/ui/hero-deniz-raki.png') center/cover no-repeat;
+    url('hero-deniz-raki.png') center/cover no-repeat;
 }
 .language-card{
   width:min(440px,92vw);
@@ -89,7 +89,7 @@ button{font-family:inherit;cursor:pointer}
   position:relative;
   min-height:620px;
   overflow:hidden;
-  background:url('assets/ui/hero-deniz-raki.png') center/cover no-repeat;
+  background:url('hero-deniz-raki.png') center/cover no-repeat;
 }
 .hero-overlay{
   position:absolute;inset:0;
