@@ -623,16 +623,21 @@ const MENU_DATA = [
   {
     id: "icecekler",
     title: { tr:"SOĞUK İÇECEKLER", en:"COLD DRINKS", ar:"المشروبات الباردة" },
-    cover: ORIGINAL_IMG.soguk,
-    items: [
-      { name:{tr:"Su Küçük", en:"Small Water", ar:"ماء صغير"}, desc:{tr:"",en:"",ar:""}, price:"50 TL" },
-      { name:{tr:"Su Büyük", en:"Large Water", ar:"ماء كبير"}, desc:{tr:"",en:"",ar:""}, price:"150 TL" },
-      { name:{tr:"Cola", en:"Cola", ar:"كولا"}, desc:{tr:"",en:"",ar:""}, price:"150 TL" },
-      { name:{tr:"Fanta", en:"Fanta", ar:"فانتا"}, desc:{tr:"",en:"",ar:""}, price:"150 TL" },
-      { name:{tr:"Sprite", en:"Sprite", ar:"سبرايت"}, desc:{tr:"",en:"",ar:""}, price:"150 TL" },
-      { name:{tr:"Soda", en:"Soda", ar:"صودا"}, desc:{tr:"",en:"",ar:""}, price:"100 TL" },
-      { name:{tr:"Şalgam", en:"Turnip Juice", ar:"شراب الشلغم"}, desc:{tr:"",en:"",ar:""}, price:"100 TL" },
-      { name:{tr:"Ayran", en:"Ayran", ar:"عيران"}, desc:{tr:"",en:"",ar:""}, price:"50 TL" }
+    drinkGroups: [
+      {
+        title:{tr:"Soğuk İçecekler",en:"Cold Drinks",ar:"المشروبات الباردة"},
+        image:ORIGINAL_IMG.soguk,
+        rows:[
+          ["Su Küçük","","50 TL"],
+          ["Su Büyük","","150 TL"],
+          ["Cola","","150 TL"],
+          ["Fanta","","150 TL"],
+          ["Sprite","","150 TL"],
+          ["Soda","","100 TL"],
+          ["Şalgam","","100 TL"],
+          ["Ayran","","50 TL"]
+        ]
+      }
     ]
   }
 ];
