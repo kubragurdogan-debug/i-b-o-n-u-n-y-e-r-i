@@ -742,7 +742,7 @@ function renderMenu(){
       <div class="section-panel" hidden>
         ${section.drinkGroups
           ? renderDrinkGroups(section)
-          : `<div class="items-grid">${section.items.map(itemTemplate).join("")}</div>`
+          : `<div class="items-grid">${section.items.map(item => section.id === "atistirmaliklar" ? snackTemplate(item) : itemTemplate(item)).join("")}</div>`
         }
       </div>
     </article>
@@ -751,6 +751,20 @@ function renderMenu(){
   document.querySelectorAll(".section-toggle").forEach(btn => {
     btn.addEventListener("click", () => openSection(btn.dataset.section));
   });
+}
+
+function snackTemplate(item){
+  const hasImage = Boolean(item.image);
+  return `
+    <div class="menu-item ${hasImage ? "has-image" : ""}">
+      ${hasImage ? `<img src="${item.image}" alt="${t(item.name)}">` : ""}
+      <div class="item-body">
+        <div class="item-title">${t(item.name)}</div>
+        ${t(item.desc) ? `<div class="item-desc">${t(item.desc)}</div>` : ""}
+        ${item.price ? `<div style="margin-top:8px;font-size:18px;font-weight:900;color:#f3c86b">${item.price}</div>` : ""}
+      </div>
+    </div>
+  `;
 }
 
 function itemTemplate(item){
