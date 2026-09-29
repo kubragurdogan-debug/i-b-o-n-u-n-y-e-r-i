@@ -354,6 +354,7 @@ body.rtl .price{right:auto;left:16px}body.rtl .item-title{padding-right:0;paddin
           <h2 id="heroTitle">Aynı Sofrada, Aynı Lezzet.</h2>
           <p id="heroText">Geleneksel meyhane ruhunu, sıcak sohbet ve özenle hazırlanan lezzetlerle yaşatıyoruz.</p>
           <a href="#menuArea" class="hero-btn" id="heroButton">Menüye Göz At</a>
+          <a href="https://www.google.com/maps/place/%C4%B0bonun+Yeri/@40.9935922,39.7774013,17z/data=!3m1!4b1!4m6!3m5!1s0x40643b9cb7a625bf:0xb37b74d130183c4!8m2!3d40.9935882!4d39.7799762!16s%2Fg%2F1tk6yz_h?entry=ttu" class="hero-btn" id="locationButton" target="_blank" rel="noopener">Konuma Git</a>
         </div>
 
         <div class="stamp" aria-label="İbo'nun Yeri mührü">
@@ -502,6 +503,7 @@ const MENU_DATA = [
     items: [
       { name:{tr:"Köfte Izgara", en:"Grilled Meatballs", ar:"كفتة مشوية"}, desc:{tr:"Porsiyon 300 gr’dır.", en:"Portion is 300 g.", ar:"الوجبة 300 غرام."}, price:"750 TL", image:FINAL_IMG.kofte},
       { name:{tr:"Et Izgara", en:"Grilled Meat", ar:"لحم مشوي"}, desc:{tr:"Porsiyon 300 gr’dır.", en:"Portion is 300 g.", ar:"الوجبة 300 غرام."}, price:"900 TL", image:IMG.menu.etIzgara },
+      { name:{tr:"Et Sote", en:"Sautéed Meat", ar:"لحم سوتيه"}, desc:{tr:"Porsiyon 300 gr’dır.", en:"Portion is 300 g.", ar:"الوجبة 300 غرام."}, price:"1.000 TL", image:FINAL_IMG.etSote},
       { name:{tr:"Et Şiş", en:"Meat Shish", ar:"شيش لحم"}, desc:{tr:"Porsiyon 300 gr’dır.", en:"Portion is 300 g.", ar:"الوجبة 300 غرام."}, price:"1.000 TL", image:FINAL_IMG.etSis},
       { name:{tr:"Et Kavurma", en:"Roasted Meat", ar:"لحم مقلي"}, desc:{tr:"Porsiyon 300 gr’dır.", en:"Portion is 300 g.", ar:"الوجبة 300 غرام."}, price:"1.000 TL", image:FINAL_IMG.etKavurma},
       { name:{tr:"Bonfile", en:"Tenderloin", ar:"فيليه"}, desc:{tr:"Porsiyon 300 gr’dır. Lütfen sorunuz.", en:"Portion is 300 g. Please ask.", ar:"الوجبة 300 غرام. يرجى السؤال."}, price:"1.200 TL", image:IMG.menu.bonfile }
@@ -512,6 +514,7 @@ const MENU_DATA = [
     title: { tr:"TAVUK MENÜ", en:"CHICKEN MENU", ar:"قائمة الدجاج" },
     items: [
       { name:{tr:"Tavuk Izgara", en:"Grilled Chicken", ar:"دجاج مشوي"}, desc:{tr:"", en:"", ar:""}, price:"650 TL", image:IMG.menu.tavukIzgara },
+      { name:{tr:"Tavuk Sote", en:"Sautéed Chicken", ar:"دجاج سوتيه"}, desc:{tr:"", en:"", ar:""}, price:"750 TL", image:FINAL_IMG.tavukSote},
       { name:{tr:"Tavuk Şiş", en:"Chicken Shish", ar:"شيش دجاج"}, desc:{tr:"", en:"", ar:""}, price:"750 TL", image:ORIGINAL_IMG.tavukSis },
       { name:{tr:"Tavuk Kavurma", en:"Roasted Chicken", ar:"دجاج مقلي"}, desc:{tr:"", en:"", ar:""}, price:"750 TL", image:FINAL_IMG.tavukKavurma}
     ]
@@ -671,6 +674,8 @@ function setLanguage(lang){
   document.getElementById("heroTitle").textContent = TEXT[lang].heroTitle;
   document.getElementById("heroText").textContent = TEXT[lang].heroText;
   document.getElementById("heroButton").textContent = TEXT[lang].heroButton;
+  const locationButton = document.getElementById("locationButton");
+  if(locationButton) locationButton.textContent = lang === "tr" ? "Konuma Git" : (lang === "en" ? "Get Directions" : "الذهاب إلى الموقع");
   document.getElementById("menuTitle").textContent = TEXT[lang].menuTitle;
   document.getElementById("menuSub").textContent = TEXT[lang].menuSub;
 
